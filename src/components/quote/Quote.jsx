@@ -1,12 +1,23 @@
 import React from 'react'; 
 import PropTypes from 'prop-types'; 
 
-const Display = () => (); 
+const Quote = ({quote}) => {
+    console.log(quote); 
+  return(   
+  <>
+        <img src={quote.image}></img>
+        <p>{quote.name}</p>
+        <p>{quote.text}</p>
+    </>
+    )
+
+  
+}; 
 
 
-Display.propTypes = { 
-
+Quote.propTypes = { 
+    quote: PropTypes.object.isRequired
 }
 
 
-export default Display; 
+export default Quote; 
