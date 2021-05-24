@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Simpsons Container returns a quote on button click 1`] = `
+<figure
+  aria-label="character-quote"
+  role="quote"
+>
+  <img />
+  <p />
+  <p />
+</figure>
+`;

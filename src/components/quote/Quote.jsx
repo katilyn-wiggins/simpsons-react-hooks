@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 const Quote = ({quote}) => {
     console.log(quote); 
   return(   
-  <>
-        <img src={quote.image}></img>
+    <figure aria-label="character-quote" role="quote">
+        <img src={quote.image} alt={quote.name}></img>
         <p>{quote.name}</p>
         <p>{quote.text}</p>
-    </>
+    </figure>
     )
 
   
