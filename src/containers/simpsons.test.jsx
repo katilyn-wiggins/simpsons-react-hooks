@@ -22,9 +22,10 @@ describe('Simpsons Container', () => {
         fireEvent.click(button); 
 
         const figure = await screen.findByRole('quote')
-        console.log(figure);
 
-        expect(figure).toMatchSnapshot(); 
+        return waitFor(() => {
+            expect(figure).toMatchSnapshot(); 
+        })
 
     });
 });

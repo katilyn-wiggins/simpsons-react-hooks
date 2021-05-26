@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types'; 
 
 const Quote = ({quote}) => {
-    console.log(quote); 
   return(   
     <figure aria-label="character-quote" role="quote">
         <img src={quote.image} alt={quote.name}></img>

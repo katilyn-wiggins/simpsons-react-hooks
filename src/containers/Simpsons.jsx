@@ -9,7 +9,6 @@ const Simpsons = () => {
 
     const handleClick = async() => {
         const quote = await getQuote(); 
-        console.log(quote);
         setQuote(quote);
     }; 
     
